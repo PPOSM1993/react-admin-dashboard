@@ -295,12 +295,13 @@ export default function Users() {
         </div>
 
         {/* Tabla */}
+        {/* Tabla */}
         <div className="overflow-x-auto max-h-[600px]">
           <table className="w-full table-auto text-sm text-left">
             <thead className="bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-300 uppercase tracking-wide text-xs">
               <tr>
                 <th
-                  className="py-2 px-3 cursor-pointer select-none"
+                  className="py-4 px-3 cursor-pointer select-none"
                   onClick={() => {
                     if (sortBy === "name") {
                       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
@@ -316,7 +317,7 @@ export default function Users() {
                   </div>
                 </th>
                 <th
-                  className="py-2 px-3 cursor-pointer select-none"
+                  className="py-4 px-3 cursor-pointer select-none"
                   onClick={() => {
                     if (sortBy === "email") {
                       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
@@ -332,7 +333,7 @@ export default function Users() {
                   </div>
                 </th>
                 <th
-                  className="py-2 px-3 cursor-pointer select-none"
+                  className="py-4 px-3 cursor-pointer select-none"
                   onClick={() => {
                     if (sortBy === "role") {
                       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
@@ -347,7 +348,7 @@ export default function Users() {
                     <ArrowUpDown size={12} className="text-gray-400" />
                   </div>
                 </th>
-                <th className="py-2 px-3">Actions</th>
+                <th className="py-4 px-3">Actions</th>
               </tr>
             </thead>
 
@@ -357,19 +358,19 @@ export default function Users() {
                   key={user.id}
                   className="hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
-                  <td className="py-2 px-3 font-medium text-gray-800 dark:text-white capitalize">
+                  <td className="py-5 px-5 font-medium text-gray-800 dark:text-white capitalize">
                     {user.name}
                   </td>
-                  <td className="py-2 px-3 font-medium text-gray-800 dark:text-white">
+                  <td className="py-5 px-5 font-medium text-gray-800 dark:text-white">
                     {user.email}
                   </td>
-                  <td className="py-2 px-3 capitalize text-gray-700 dark:text-gray-300">
+                  <td className="py-5 px-5 capitalize text-gray-700 dark:text-gray-300">
                     {user.role}
                   </td>
-                  <td className="py-2 px-3 flex gap-2">
+                  <td className="py-3 px-3 flex gap-2">
                     <button
                       onClick={() => setModalView(user)}
-                      className="flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition text-sm"
+                      className="flex items-center gap-1 px-3 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition text-sm"
                       title="View user details"
                     >
                       <Eye size={14} />
@@ -377,7 +378,7 @@ export default function Users() {
                     </button>
                     <button
                       onClick={() => openEditModal(user)}
-                      className="flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-yellow-400 text-yellow-900 hover:bg-yellow-500 transition text-sm"
+                      className="flex items-center gap-1 px-3 py-2 rounded-md bg-yellow-400 text-yellow-900 hover:bg-yellow-500 transition text-sm"
                       title="Edit user"
                     >
                       <Pencil size={14} />
@@ -385,7 +386,7 @@ export default function Users() {
                     </button>
                     <button
                       onClick={() => setModalDelete(user)}
-                      className="flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-red-600 text-white hover:bg-red-700 transition text-sm"
+                      className="flex items-center gap-1 px-3 py-2 rounded-md bg-red-600 text-white hover:bg-red-700 transition text-sm"
                       title="Delete user"
                     >
                       <Trash2 size={14} />
@@ -406,7 +407,6 @@ export default function Users() {
               )}
             </tbody>
           </table>
-
         </div>
 
         {/* Paginación */}

@@ -7,6 +7,7 @@ import ProtectedRoute from "../router/ProtectedRoute";
 import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 import RolesPermissionsTable from "../pages/RolesPermissionsTable";
+import Sales from '../pages/Sales'
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/roles" element={<RolesPermissionsTable />} />
+          <Route path="/sales" element={<Sales />} />
         </Route>
       </Routes>
     </BrowserRouter>
