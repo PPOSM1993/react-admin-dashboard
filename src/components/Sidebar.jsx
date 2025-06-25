@@ -16,7 +16,7 @@ const links = [
   { to: "/categories", label: "Categorías", icon: List },
   { to: "/customers", label: "Clientes", icon: User2 },
   { to: "/orders", label: "Pedidos", icon: ClipboardList },
-  { to: "/purchases", label: "Compras", icon: CreditCard },
+  { to: "/buy", label: "Compras", icon: CreditCard },
   { to: "/suppliers", label: "Proveedores", icon: Truck },
   { to: "/invoices", label: "Facturas", icon: FileText },
   { to: "/payments", label: "Pagos", icon: DollarSign },

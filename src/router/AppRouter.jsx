@@ -9,7 +9,14 @@ import Profile from "../pages/Profile";
 import RolesPermissionsTable from "../pages/RolesPermissionsTable";
 import Sales from '../pages/Sales';
 import Products from '../pages/Products'
-
+import Category from '../pages/Category';
+import Customers from "../pages/Customers";
+import Orders from "../pages/Orders";
+import Contact from '../pages/Contact';
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import Buy from '../pages/Buy'
+import Suppliers
+ from "../pages/Suppliers";
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -23,6 +30,13 @@ export default function AppRouter() {
           <Route path="/roles" element={<RolesPermissionsTable />} />
           <Route path="/sales" element={<Sales />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/categories" element={<Category />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/buy" element={<Buy />} />
+          <Route path="/suppliers" element={<Suppliers />} />
         </Route>
       </Routes>
     </BrowserRouter>

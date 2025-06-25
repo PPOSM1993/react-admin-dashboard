@@ -33,7 +33,7 @@ export default function Footer() {
 
         {/* Redes sociales */}
         <div className="flex justify-center sm:justify-end gap-4">
-          <a href="https://github.com/pedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+          <a href="https://github.com/PPOSM1993" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
             <Github size={20} />
           </a>
           <a href="https://linkedin.com/in/pedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
