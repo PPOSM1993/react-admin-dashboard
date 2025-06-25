@@ -1,12 +1,14 @@
-// tailwind.config.js
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'class', // <--- importante
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '2xl': '1rem',
+      }
+    }
   },
   plugins: [],
 }
