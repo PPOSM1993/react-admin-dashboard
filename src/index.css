@@ -12,3 +12,12 @@
     transform: translateX(0);
   }
 }
+
+/* Scrollbar invisible */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

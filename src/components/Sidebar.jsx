@@ -46,18 +46,18 @@ export default function Sidebar({ open, setOpen, collapsed }) {
       <aside
         className={`fixed top-0 left-0 z-40 h-full bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 shadow-md
         transform transition-all duration-300 ease-in-out
-        ${open ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0 ${width}`}
+        ${open ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0 ${width} flex flex-col`}
       >
-        {/* Header logo */}
+        {/* Header */}
         <div className={`flex items-center px-4 h-16 border-b border-gray-200 dark:border-gray-800 text-indigo-700 dark:text-indigo-400 transition-all duration-300 ${collapsed ? "justify-center text-xl font-bold" : "text-2xl font-extrabold"}`}>
           {collapsed ? "A" : "Admin Pro"}
-          {/* Botón cerrar solo en móvil */}
           <button onClick={() => setOpen(false)} className="sm:hidden ml-auto text-gray-600 dark:text-gray-300 hover:text-red-500">
             <X size={20} />
           </button>
         </div>
 
-        <nav className="mt-4 flex flex-col gap-1 px-2 flex-1 overflow-y-auto">
+        {/* Nav Scrollable */}
+        <nav className="flex-1 overflow-y-auto no-scrollbar px-2 py-3">
           {links.map(({ to, label, icon: Icon }) => {
             const isActive = pathname === to;
             return (
@@ -79,6 +79,7 @@ export default function Sidebar({ open, setOpen, collapsed }) {
           })}
         </nav>
 
+        {/* Footer */}
         <div className="hidden sm:flex items-center justify-center h-12 text-xs text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800">
           {!collapsed && <span>&copy; {new Date().getFullYear()} Admin Pro</span>}
         </div>
