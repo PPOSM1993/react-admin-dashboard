@@ -7,7 +7,7 @@ import ProtectedRoute from "../router/ProtectedRoute";
 import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 import RolesPermissionsTable from "../pages/RolesPermissionsTable";
-import Sales from '../pages/Sales'
+import Sales from '../pages/Sales';
 
 export default function AppRouter() {
   return (
