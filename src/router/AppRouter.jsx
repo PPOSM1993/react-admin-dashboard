@@ -15,8 +15,9 @@ import Orders from "../pages/Orders";
 import Contact from '../pages/Contact';
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import Buy from '../pages/Buy'
-import Suppliers
- from "../pages/Suppliers";
+import Suppliers from "../pages/Suppliers";
+import Invoices from '../pages/Invoices'
+
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -37,6 +38,7 @@ export default function AppRouter() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/suppliers" element={<Suppliers />} />
+          <Route path="/invoices" element={<Invoices />} />
         </Route>
       </Routes>
     </BrowserRouter>
