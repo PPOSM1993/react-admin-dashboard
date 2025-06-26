@@ -204,7 +204,7 @@ export default function Orders() {
             type="date"
             value={filterDateFrom}
             onChange={(e) => setFilterDateFrom(e.target.value)}
-            className="px-3 py-2 border rounded-md dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+            className="mb-4 px-3 py-1.5 w-full border rounded dark:bg-gray-800 dark:text-white text-sm"
           />
         </div>
 
@@ -214,7 +214,7 @@ export default function Orders() {
             type="date"
             value={filterDateTo}
             onChange={(e) => setFilterDateTo(e.target.value)}
-            className="px-3 py-2 border rounded-md dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+            className="mb-4 px-3 py-1.5 w-full border rounded dark:bg-gray-800 dark:text-white text-sm"
           />
         </div>
       </div>

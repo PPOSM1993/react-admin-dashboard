@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { Moon, Sun } from "lucide-react";
@@ -24,13 +23,10 @@ export default function Login() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-
   const handleLogin = (e) => {
     e.preventDefault();
     if (email && password) {
       localStorage.setItem("auth", "true");
-
-      
       navigate("/");
     }
   };
@@ -78,11 +74,22 @@ export default function Login() {
             />
           </div>
 
-          {/* Enlace y error */}
+          {/* Enlaces */}
           <div className="flex justify-between items-center text-sm">
-            <a href="/forgot-password" className="text-blue-600 dark:text-blue-400 hover:underline">
+            <button
+              type="button"
+              onClick={() => navigate("/forgot-password")}
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
               ¿Olvidaste tu contraseña?
-            </a>
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate("/register")}
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              Crear cuenta
+            </button>
           </div>
 
           {/* Botón login */}
@@ -90,7 +97,7 @@ export default function Login() {
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition"
           >
-            Iniciar Sesion
+            Iniciar Sesión
           </button>
 
           {/* Separador */}

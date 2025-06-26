@@ -55,6 +55,9 @@ export default function Products() {
   const [modalCreate, setModalCreate] = useState(false);
   const [form, setForm] = useState({ name: "", price: "", category: "", stock: "", status: "activo" });
   const [errors, setErrors] = useState({});
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+
 
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
@@ -74,6 +77,12 @@ export default function Products() {
       return 0;
     });
   }, [filteredProducts, sortBy, sortDirection]);
+
+  const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
+  const paginatedProducts = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return sortedProducts.slice(startIndex, startIndex + itemsPerPage);
+  }, [sortedProducts, currentPage]);
 
   // Validaciones más estrictas
   const validateForm = () => {
@@ -262,7 +271,7 @@ export default function Products() {
                 <td colSpan={6} className="text-center py-6 text-gray-500 dark:text-gray-400">No se encontraron productos</td>
               </tr>
             ) : (
-              sortedProducts.map((product) => (
+              paginatedProducts.map((product) => (
                 <tr key={product.id} className="hover:bg-gray-50 dark:hover:bg-gray-800">
                   <td className="py-4 px-5 text-gray-800 dark:text-white">{product.name}</td>
                   <td className="py-4 px-5 text-gray-700 dark:text-gray-200">${product.price.toLocaleString()}</td>
@@ -301,6 +310,29 @@ export default function Products() {
           </tbody>
         </table>
       </div>
+
+      <div className="flex justify-between items-center mt-4 text-sm text-gray-600 dark:text-gray-300">
+        <span>
+          Página {currentPage} de {totalPages}
+        </span>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+            disabled={currentPage === 1}
+            className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded disabled:opacity-50"
+          >
+            Anterior
+          </button>
+          <button
+            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+            disabled={currentPage === totalPages}
+            className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded disabled:opacity-50"
+          >
+            Siguiente
+          </button>
+        </div>
+      </div>
+
 
       {/* Modal Crear/Editar sin animación ni blur */}
       {(modalCreate || modalEdit) && (

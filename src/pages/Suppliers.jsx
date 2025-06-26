@@ -189,12 +189,12 @@ export default function Suppliers() {
           placeholder="Buscar por nombre..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="px-3 py-2 border rounded dark:bg-gray-800 dark:text-white"
+          className="mb-4 px-3 py-1.5 w-full border rounded dark:bg-gray-800 dark:text-white text-sm"
         />
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="px-3 py-2 border rounded dark:bg-gray-800 dark:text-white"
+          className="mb-4 px-3 py-1.5 w-full border rounded dark:bg-gray-800 dark:text-white text-sm"
         >
           <option value="">Filtrar por estado</option>
           <option value="activo">Activo</option>

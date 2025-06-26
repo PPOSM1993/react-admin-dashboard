@@ -16,7 +16,18 @@ import Contact from '../pages/Contact';
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import Buy from '../pages/Buy'
 import Suppliers from "../pages/Suppliers";
-import Invoices from '../pages/Invoices'
+import Invoices from '../pages/Invoices';
+import Payments from '../pages/Payments';
+import Reports from "../pages/Reports";
+import WorkOrders from "../pages/WorkOrders";
+import SupportTickets from "../pages/SupportTickets";
+import Workers from "../pages/Workers";
+import Attendance from "../pages/Attendance";
+import Inventory from "../pages/Inventory";
+import StockMovements from "../pages/StockMovements";
+import Terms from "../pages/Terms";
+import Register from "../pages/Register";
+import ForgotPassword from "../pages/ForgotPassword";
 
 export default function AppRouter() {
   return (
@@ -39,8 +50,20 @@ export default function AppRouter() {
           <Route path="/buy" element={<Buy />} />
           <Route path="/suppliers" element={<Suppliers />} />
           <Route path="/invoices" element={<Invoices />} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/work-orders" element={<WorkOrders />} />
+          <Route path="/tickets" element={<SupportTickets />} />
+          <Route path="/staff" element={<Workers />} />
+          <Route path="/attendance" element={<Attendance />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/stock-movements" element={<StockMovements />} />
+          <Route path="/terms" element={<Terms />} />
         </Route>
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
