@@ -32,6 +32,11 @@ Esta aplicación es un sistema completo de administración que incluye funcional
 
 ---
 
+## 🚀 Demo en Vivo
+
+👉 https://react-admin-dashboard-phi-five.vercel.app/login
+
+
 ## 📦 Instalación y Ejecución
 
 1. Clona el repositorio:
@@ -50,3 +55,39 @@ http://localhost:5173
 
 
 ![Screenshot from 2025-06-26 11-06-08](https://github.com/user-attachments/assets/3e97662e-8893-423c-bba7-b63ce5d24263)
+
+---
+
+## 🛒 Dónde Subirlo y Venderlo
+
+| Marketplace             | Comisión aprox. | Notas                                  |
+|-------------------------|------------------|----------------------------------------|
+| **UI8**                 | 30%              | Ideal para dashboards premium          |
+| **Creative Market**     | 30-40%           | Excelente visibilidad y tráfico        |
+| **Gumroad**             | 10%              | Ideal si haces tu propio marketing     |
+| **Etsy**                | 5%               | Sí, también venden dashboards ahí      |
+| **Envato (ThemeForest)**| hasta 50%        | Mucho tráfico, pero revisión estricta  |
+
+---
+
+## 💸 Precio Sugerido y Ganancias
+
+- 💰 **Precio sugerido**: USD **$25 – $59**
+- 📈 Ganancia estimada:
+  - 5 ventas al mes = $125 – $295 USD
+  - Con buen marketing (redes, YouTube, etc.): **$500+ USD/mes**
+
+---
+
+## ✅ Check final antes de publicar
+
+- [x] README.md completo
+- [x] Proyecto comprimido en `.zip`
+- [x] Demo online en Vercel o Netlify
+- [ ] Capturas de pantalla atractivas
+- [ ] Página de venta en Gumroad, UI8 u otra plataforma
+
+---
+
+¿Quieres que preparemos ahora las **capturas promocionales** o el archivo `.zip` final con limpieza incluida (`node_modules`, `.git`, etc.)?
+
