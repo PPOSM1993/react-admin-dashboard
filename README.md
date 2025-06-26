@@ -48,27 +48,5 @@ npm run dev
 http://localhost:5173
 # Abrir navegador y escribir la URL para ver la aplicación en acción
 
-📂 Estructura del Proyecto
-react-admin-dashboard/
-├── node_modules/             # Dependencias instaladas
-├── public/                   # Archivos públicos (favicon, etc.)
-├── src/                      # Carpeta principal del proyecto
-│   ├── assets/               # Imágenes, logos, íconos
-│   ├── components/           # Componentes reutilizables como Products, Reports, Inventory, etc.
-│   ├── hooks/                # Hooks personalizados
-│   ├── layout/               # Layout general (Navbar, Sidebar, etc.)
-│   ├── pages/                # Páginas como Login, Register, ForgotPassword
-│   ├── router/               # Definición de rutas con React Router
-│   ├── utils/                # Funciones auxiliares o helpers
-│   ├── App.jsx               # Componente raíz de la aplicación
-│   ├── main.jsx              # Punto de entrada (montaje en DOM)
-│   ├── index.css             # Estilos base + Tailwind
-│   └── index.js              # Archivo index (probablemente legacy, se puede revisar)
-├── .eslintrc.cjs             # Configuración de ESLint
-├── index.html                # HTML base usado por Vite
-├── package.json              # Dependencias, scripts, metadatos
-├── package-lock.json         # Lockfile de NPM
-├── postcss.config.js         # Configuración de PostCSS (para Tailwind)
-├── tailwind.config.js        # Configuración de Tailwind
-├── vite.config.js            # Configuración de Vite
-└── README.md                 # Documentación del proyecto
+
+![Screenshot from 2025-06-26 11-06-08](https://github.com/user-attachments/assets/3e97662e-8893-423c-bba7-b63ce5d24263)
