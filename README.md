@@ -17,6 +17,7 @@ This is a complete admin system featuring modern functionalities to manage multi
 🎨 Professional and user-friendly interface.
 
 🚀 Technologies Used
+
 ⚡ React + Vite
 🎨 Tailwind CSS (Dark and Light mode)
 📊 Lucide Icons + Framer Motion
@@ -27,24 +28,30 @@ This is a complete admin system featuring modern functionalities to manage multi
 📱 100% Responsive design
 
 Live Demo
+
 👉 https://react-admin-dashboard-phi-five.vercel.app/login
 
 📦 Installation & Setup
+
 Clone the repository:
 
 git clone https://github.com/your-username/react-admin-dashboard.git
 cd react-admin-dashboard
 
 Install dependencies:
+
 npm install
 
 Start the development server:
+
 npm run dev
 
 Open in browser:
+
 http://localhost:5173
 
 🛒 Where to Upload and Sell
+
 Marketplace	Approx. Commission	Notes
 UI8	30%	Great for premium dashboards
 Creative Market	30–40%	Excellent visibility and exposure
