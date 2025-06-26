@@ -4,6 +4,7 @@
 Frontend web application built with React JS and Tailwind CSS for managing products, reports, workers, inventory, work orders, and more.
 
 🧾 Description
+
 This is a complete admin system featuring modern functionalities to manage multiple modules efficiently:
 
 🔐 Authentication with login, registration, and password recovery.
