@@ -28,32 +28,21 @@ This is a complete admin system featuring modern functionalities to manage multi
 Live Demo
 👉 https://react-admin-dashboard-phi-five.vercel.app/login
 
-Installation & Setup
+📦 Installation & Setup
 Clone the repository:
 
-bash
-Copiar
-Editar
 git clone https://github.com/your-username/react-admin-dashboard.git
 cd react-admin-dashboard
+
 Install dependencies:
-
-bash
-Copiar
-Editar
 npm install
+
 Start the development server:
-
-bash
-Copiar
-Editar
 npm run dev
-Open in browser:
 
-arduino
-Copiar
-Editar
+Open in browser:
 http://localhost:5173
+
 🛒 Where to Upload and Sell
 Marketplace	Approx. Commission	Notes
 UI8	30%	Great for premium dashboards
