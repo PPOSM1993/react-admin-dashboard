@@ -39,13 +39,13 @@ export default function Footer() {
           <a href="https://linkedin.com/in/pedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:pedro@example.com" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+          <a href="mailto:pososriosanmartin@gmail.com" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
             <Mail size={20} />
           </a>
-          <a href="https://twitter.com/pedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
             <Twitter size={20} />
           </a>
-          <a href="https://instagram.com/pedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+          <a href="https://instagram.com/impedroosorio" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
             <Instagram size={20} />
           </a>
         </div>
